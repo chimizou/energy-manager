@@ -11,9 +11,9 @@ import java.util.UUID;
 @Builder
 public class Offer {
     @Default UUID id = UUID.randomUUID();
-    MarketSegment marketSegment;
+    PowerMarket powerMarket;
     LocalDate day;
     TimeBloc daySlot;
-    double minPrice;
-    double quantity;
+    double floorPrice;
+    double energyQuantity;
 }

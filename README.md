@@ -11,8 +11,12 @@ Electricity-generating parks, of different types (solar, wind or hydraulic), are
 a certain number of MegaWatts during a block of time. To enable the traceability of electricity production (
 guarantee of origin), it must be possible to know the park which will produce the electricity of an offer.
 
+This application offers APIs for creating an offer, creating a park, listing the offers offered by Agregio 
+for each market and obtaining the list of parks selling on a market.
+
 ## Technical stack
 
 - Java 17
 - Spring boot 2.7.0 to start coding right away without wasting time on preparing and configuring the environment.
 - Lombok to reduce boilerplate code for model/data objects
+- Vavr to reduce the amount of code and to increase the robustness for functional programming
