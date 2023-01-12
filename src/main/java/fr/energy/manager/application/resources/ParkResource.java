@@ -1,11 +1,11 @@
-package fr.energy.manager.application.rest;
+package fr.energy.manager.application.resources;
 
 
 import fr.energy.manager.application.dtos.ParkCreationDto;
 import fr.energy.manager.application.mappers.ParkCreationDtoMapper;
 import fr.energy.manager.domain.model.EnergyPark;
 import fr.energy.manager.domain.ports.api.EnergyParkCreationApi;
-import fr.energy.manager.infrastructure.adapters.ParkSearchAdapter;
+import fr.energy.manager.infrastructure.adapters.EnergyParkSearchAdapter;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.*;
 public class ParkResource {
 
   private final EnergyParkCreationApi parkCreationApi;
-  private final ParkSearchAdapter searchAdapter; // /!\ Don't do that in a real case
+  private final EnergyParkSearchAdapter searchAdapter; // /!\ Don't do that in a real case
 
   @PostMapping
   @Operation(summary = "Create a new Park")

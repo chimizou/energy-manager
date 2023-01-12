@@ -1,4 +1,4 @@
-package fr.energy.manager.application.rest;
+package fr.energy.manager.application.resources;
 
 import fr.energy.manager.infrastructure.adapters.OfferSearchAdapter;
 import io.swagger.v3.oas.annotations.Operation;

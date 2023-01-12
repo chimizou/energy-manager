@@ -18,7 +18,7 @@ import static io.vavr.API.Try;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-public class ParkCreationAdapter implements EnergyParkCreationSpi {
+public class EnergyParkCreationAdapter implements EnergyParkCreationSpi {
 
     private final EnergyParkRepository repository;
 

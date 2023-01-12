@@ -16,7 +16,7 @@ import static io.vavr.API.Try;
 
 @Component
 @RequiredArgsConstructor
-public class ParkSearchAdapter {
+public class EnergyParkSearchAdapter {
 
   private final EnergyParkRepository repository;
 
