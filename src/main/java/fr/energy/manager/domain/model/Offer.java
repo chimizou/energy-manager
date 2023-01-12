@@ -13,7 +13,7 @@ public class Offer {
     @Default UUID id = UUID.randomUUID();
     PowerMarket powerMarket;
     LocalDate day;
-    TimeBloc daySlot;
+    TimeBloc timeBloc;
     double floorPrice;
     double energyQuantity;
 }

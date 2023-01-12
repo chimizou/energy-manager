@@ -1,0 +1,40 @@
+time-zone: UTC
+
+server:
+  address: 0.0.0.0
+  port: 8080
+  compression:
+    enabled: true
+    min-response-size: 3KB
+
+spring:
+  application.name: energy-manager
+  main.banner-mode: off
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      hibernate.jdbc.time_zone: ${time-zone:UTC}
+  transaction:
+    default-timeout: 3
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/energy-manager
+    username: postgres
+    password: postgres
+    hikari:
+      pool-name: energy-manager-hikari-pool
+      minimum-idle: 1
+      maximum-pool-size: 5
+      idle-timeout: 60000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+  jackson.time-zone: ${time-zone:UTC}
+
+springdoc:
+  swagger-ui:
+    path: api-doc.html
+    operations-sorter: method
