@@ -9,7 +9,6 @@ server:
 
 spring:
   application.name: energy-manager
-  main.banner-mode: off
   jpa:
     open-in-view: false
     show-sql: true
